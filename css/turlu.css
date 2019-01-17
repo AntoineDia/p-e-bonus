@@ -14,8 +14,21 @@ body{
     font-style: normal;
 }
 
-h1 {
+header {
   text-align: center;
+  padding: 60px 0 35px 0;
+}
+#logo {
+  width: 280px;
+}
+header > h2 {
+  padding-bottom: 15px;
+}
+#startnow{
+  width: 200px;
+  background-color: orange;
+  padding: 15px;
+  border: 2px solid white;
 }
 
 #chat {
@@ -31,6 +44,12 @@ h1 {
   filter: drop-shadow(5px 5px 5px LightSkyBlue);
 }
 
+nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
 nav > ul {
   list-style-type: none;
   margin: 0;
@@ -54,8 +73,8 @@ nav > ul > li:hover {
 
 nav > ul > li:last-of-type{
   float: right;
-  background-size: auto;
+  background-image: url(../images/usericon.svg);
   background-repeat: no-repeat;
-  background-position: left;
-  background-image: url(../images/usericon.svg)
+  padding-left: 56px;
+  background-position: 16px;
 }
