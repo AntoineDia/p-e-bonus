@@ -1,3 +1,10 @@
+@font-face{
+    font-family: 'roboto';
+    src: url('../font/roboto.woff2') format('woff2'),
+         url('../font/roboto.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
   margin: 0;
   padding: 0;
@@ -5,50 +12,16 @@ body{
   background-color: DeepSkyBlue ;
   color: white;
 }
-
-@font-face {
-    font-family: 'roboto';
-    src: url('../font/roboto.woff2') format('woff2'),
-         url('../font/roboto.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-header {
+header{
   text-align: center;
-  padding: 60px 0 35px 0;
 }
-#logo {
-  width: 280px;
-}
-header > h2 {
-  padding-bottom: 15px;
-}
-#startnow{
-  width: 200px;
-  background-color: orange;
-  padding: 15px;
-  border: 2px solid white;
-  border-radius: 10px;
-  font-size: 120%;
-}
-
-#chat {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 60px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-}
-
 nav{
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
 }
-nav > ul {
+nav > ul{
   list-style-type: none;
   margin: 0;
   font-size: 95%;
@@ -57,22 +30,51 @@ nav > ul {
   overflow: hidden;
   background-color: #333333;
 }
-
-nav > ul > li {
+nav > ul > li{
   float: left;
   color: white;
   text-align: center;
   padding: 8px 16px 8px 16px;
 }
-
-nav > ul > li:hover {
-  background-color: #111111;
-}
-
+nav > ul > li:hover{background-color: #111111;}
 nav > ul > li:last-of-type{
   float: right;
-  background-image: url(../images/usericon.svg);
+  background-image: url(../img/usericon.svg);
   background-repeat: no-repeat;
+  background-size: 23px;
   padding-left: 56px;
   background-position: 16px;
+}
+.top{
+  vertical-align: middle;
+  padding: 80px 0 50px 0;
+}
+.top img {
+  width: 300px
+}
+#avatar{
+  position: absolute;
+  padding: 75px 0 0 50px;
+  width: 250px;
+}
+.top button{
+  background-color: orange;
+  border: 2px solid white;
+  padding: 15px;
+  color: white;
+  border-radius : 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.top button:hover{
+  background-color: darkorange;
+}
+h1 {
+  font-size: 30px;
+}
+.slogan{
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 5px 0 5px 0;
 }
